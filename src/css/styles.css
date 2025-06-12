@@ -2,7 +2,21 @@ html,
 body{
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-color: rgb(1, 1, 56);
+  background-color: var(--bg-main)
+}
+:root {
+  --bg-main: #090f1b;
+  --bg-section: #1e293b;
+  --card-bg: #334155;
+  --border-color: #64748b;
+  --text-main: #f1f5f9;
+  --text-muted: #cbd5e1;
+  --accent-orange: #f97316;
+  --accent-green: #22c55e;
+  --footer-bg: #0f172a;
+  --skin-tone: #f1d0b1;
+  --hair-color: #2d1c14;
+  --shirt-color: #1e2a38;
 }
 span{
   display: block;
@@ -13,14 +27,14 @@ span{
   display: block;
   position: relative;
   overflow: hidden;
-  border: 1px solid black;
   margin: 30px auto;
   width: 50%;
-  background-color: grey;
+  border-radius: 20px;
 }
 .hero .container{
   display: flex;
   justify-content: center;
+  gap: 20px;
 }
 .hero .container .hero-content{
   display: flex;
@@ -29,8 +43,7 @@ span{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  padding: 10px auto;
+  width: 50%;
 }
 .hero .container .hero-content .hero-buttons{
   display: block;
@@ -40,7 +53,7 @@ span{
 .hero .container .hero-content .hero-buttons .buton-list{
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   padding-inline-start: 0;
   height: 100%;
   align-items: center;
@@ -50,14 +63,20 @@ ul{
 }
 button{
   cursor: pointer;
+  background-color: var(--bg-section);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: var(--text-main);
+  font-size: 22px;
 }
 h1{
-  font-size: 48px;
+  font-size: 56px;
   margin: 5px;
-  color: rgb(116, 116, 0);
+  color: rgb(199, 199, 0)
 }
 p{
-  font-size: 18px;
+  font-size: 22px;
   color: white;
 }
 
