@@ -1,18 +1,63 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+html,
+body{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: rgb(1, 1, 56);
+}
+span{
+  display: block;
+  width: 100%;
+  font-size: 16px;
+}
+.hero{
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid black;
+  margin: 30px auto;
+  width: 50%;
+  background-color: grey;
+}
+.hero .container{
+  display: flex;
+  justify-content: center;
+}
+.hero .container .hero-content{
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px auto;
+}
+.hero .container .hero-content .hero-buttons{
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.hero .container .hero-content .hero-buttons .buton-list{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-inline-start: 0;
+  height: 100%;
+  align-items: center;
+}
+ul{
+  list-style: none;
+}
+button{
+  cursor: pointer;
+}
+h1{
+  font-size: 48px;
+  margin: 5px;
+  color: rgb(116, 116, 0);
+}
+p{
+  font-size: 18px;
+  color: white;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
