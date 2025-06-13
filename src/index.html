@@ -4,11 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deniz Can Özder</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section class="hero">
+    <!-- <section class="hero">
       <seciton class="container">
         <section class="hero-content">
          <h1 class="hero-h1">Merhaba, ben <br> Deniz </h1>
@@ -29,6 +41,167 @@
         </section>
         <img src="./img/cv.png" alt="Picture of Deniz" width="250">
       </seciton>
-    </section>
+    </section> -->
+    <header>
+      <nav class="navbar">
+        <a href="#About" class="mobilelogo">
+          <span class="mobile-logo">Deniz Can Özder</span></a
+        >
+        <a href="#About" class="logo">
+          <img src="./img/cv.png" alt="Deniz Can Özder" width="80" />
+        </a>
+        <button type="button" id="burger">
+          <svg class="icon icon-menu" width="24" height="24">
+            <use xlink:href="./img/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <section class="navbar-items">
+          <ul class="nav-list">
+            <li class="list-item">
+              <a href="#About" class="nav-link">Hakkımda</a>
+            </li>
+            <li class="list-item">
+              <a href="#Exp" class="nav-link">Tecrübe</a>
+            </li>
+            <li class="list-item">
+              <a href="#Edu" class="nav-link">Eğitim</a>
+            </li>
+            <li class="list-item">
+              <a href="#Skill" class="nav-link">Yeteneklerim</a>
+            </li>
+            <li class="list-item">
+              <a href="#Project" class="nav-link">Projelerim</a>
+            </li>
+            <li class="list-item">
+              <a href="#Interest" class="nav-link">Hobilerim</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="About">
+        <section class="container">
+          <section class="hero-head">
+            <h1 class="hero-name">
+              Deniz Can <span class="hero-span">Özder</span>
+            </h1>
+            <address class="contact">
+              <ul class="contact-list">
+                <li class="contact-li">
+                  <p class="adress">34758 Türkiye - İstanbul Ataşehir</p>
+                </li>
+                <li class="contact-li">
+                  <a href="tel:+90 545 216 85 28" class="tel"
+                    >+90 (545) 216 85 28</a
+                  >
+                  <span> - </span>
+                  <a href="mailto:contact@denizozder.com" class="mail"
+                    >contact@denizozder.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </section>
+          <section class="hero-body">
+            <p class="body-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+              itaque cum amet distinctio est magnam iste incidunt nostrum
+              veritatis cupiditate enim nobis error fuga eveniet qui molestiae
+              provident rem recusandae maxime nemo non, reiciendis nesciunt
+              quaerat reprehenderit? At beatae aliquam perspiciatis
+              exercitationem fugiat? Porro consequuntur error itaque repellat.
+              Praesentium, aperiam?
+            </p>
+          </section>
+          <section class="social-media">
+            <ul class="social-list">
+              <li class="social-li">
+                <a href="https://www.linkedin.com/in/denizozder1/" target="_blank" class="social-link">
+                  <svg class="icon icon-menu" width="36" height="36">
+                    <use xlink:href="./img/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-li">
+                <a href="https://github.com/DenizzOzder" target="_blank" class="social-link">
+                  <svg class="icon icon-menu" width="36" height="36">
+                    <use xlink:href="./img/symbol-defs.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-li">
+                <a href="https://www.instagram.com/deniz.ozder1/" target="_blank" class="social-link">
+                  <svg class="icon icon-menu" width="36" height="36">
+                    <use
+                      xlink:href="./img/symbol-defs.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-li">
+                <a href="https://x.com/DENlSS_" target="_blank" class="social-link">
+                  <svg class="icon icon-menu" width="36" height="36">
+                    <use xlink:href="./img/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </section>
+      <section class="experience">
+        <section class="container">
+          <h2 class="exp-head">deneyim</h2>
+          <ul class="exp-list">
+            <li class="exp-item">
+              <h3 class="exp-name">Frontend Developer</h3>
+              <h3 class="exp-company">Freelance</h3>
+              <p class="exp-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda amet voluptates. Fugiat iusto ipsam dolorem doloribus dolores quia unde. Delectus quia non impedit labore omnis velit ab ad sequi!</p>
+              <span class="exp-date">Haziran 2024 - Günümüz</span>
+            </li>
+            <li class="exp-item">
+              <h3 class="exp-name">Sistem Yöneticisi ve Müşteri Danışmanı</h3>
+              <h3 class="exp-company">osoci - hibrit</h3>
+              <p class="exp-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda amet voluptates. Fugiat iusto ipsam dolorem doloribus dolores quia unde. Delectus quia non impedit labore omnis velit ab ad sequi!</p>
+              <span class="exp-date">Aralık 2021 - Günümüz</span>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section class="education">
+        <section class="container">
+          <h2 class="edu-head">eğitim</h2>
+          <ul class="edu-list">
+            <li class="edu-item">
+              <h3 class="edu-name">go - it türkiye</h3>
+              <h3 class="edu-company">Full Stack Bootcamp (10 Ay)</h3>
+              <h4 class="edu-extra">Sertifikalı</h4>
+              <p class="edu-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda amet voluptates. Fugiat iusto ipsam dolorem doloribus dolores quia unde. Delectus quia non impedit labore omnis velit ab ad sequi!</p>
+              <span class="edu-date">Kasım 2024 - Ağustos 2025</span>
+            </li>
+             <li class="edu-item">
+              <h3 class="edu-name">Yıldız Teknik Üniversitesi</h3>
+              <h3 class="edu-company">Fizik</h3>
+              <p class="edu-para">GPA: 3</p>
+              <span class="edu-date">Eylül - 2022 - Haziran - 2029</span>
+            </li>
+            <li class="edu-item">
+              <h3 class="edu-name">Ataşehir Adıgüzel MYO</h3>
+              <h3 class="edu-company">Bilgisayar Programcılığı</h3>
+              <p class="edu-para">GPA: 3.34</p>
+              <span class="edu-date">Eylül - 2018 - Haziran - 2020</span>
+            </li>
+            <li class="edu-item">
+              <h3 class="edu-name">İbrahim Müteferrika Mesleki ve Teknik Anadolu Lisesi</h3>
+              <h3 class="edu-company">Bilişim Teknolojileri</h3>
+              <p class="edu-para">Veritabanı Dalı - 80.9 / 100</p>
+              <span class="edu-date">Eylül - 2024 - Haziran - 2018</span>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <script src="main.js" defer></script>
   </body>
 </html>
