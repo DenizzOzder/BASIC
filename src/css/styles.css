@@ -225,6 +225,7 @@ header{
   overflow: hidden;
   padding: 50px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  min-width: 325px;
 
 }
 .experience .container, .education .container, .hobbies .container{
@@ -299,26 +300,34 @@ h4{
   margin: 10px;
   font-weight: 800;
   }
+    .project .container .project-section .project-item {
+      max-width: 360px;
+      margin: auto;
+    }
   .project .container .project-section .project-item .project-name{
     margin-left: 20px;
+    margin-bottom: 0;
   }
   .project .container .project-section .project-item .project-list-item{
     border: 1px solid black;
     margin: 5px 10px;
-    height: fit-content;
     display: flex;
     position: relative;
     overflow: hidden;
-    max-height: 170px;
+    max-width: 360px;
     border-radius: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: calc(100% - 380px);
   }
   .project .container .project-section .project-item .project-list-item .project-body, .project .container .project-section .project-item .project-list-item .project-video{
     height: 150px;
-    width: 50%;
+    width: 100%;
     padding: 2px;
     display: flex;
     align-items: center;
-    margin: 0 5px
+    margin: 0 5px;
+    flex: 1 1;
   }
   video{
     border-radius: 10px;
@@ -327,16 +336,39 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    margin: auto;
+    max-width: 360px;
+    flex-basis: 100%;
+    width: 100%;
+    background-color: var(--bg-main);
+    border-top: 1px solid black;
+    padding: 5px;
   }
   .project-buttons a{
-    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color:#0f172a;
+    gap: 5px;
+  }
+  .project-buttons svg{
+    fill: black;
   }
   .project .container .project-section .project-list{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
+    flex-wrap: wrap;
   }
-
+.project .container .project-section .project-list .project-item .project-date{
+  margin-left: 25px;
+  font-size: 12px;
+  color: var(--bg-main);
+  opacity: 0.8;
+}
 /* PROJECT END */
 
 /* Hobbies START */
