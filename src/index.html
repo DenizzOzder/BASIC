@@ -50,6 +50,10 @@
         <a href="#About" class="logo">
           <img src="./img/cv.png" alt="Deniz Can Özder" width="80" />
         </a>
+        <button type="button" id="cv">
+
+        </button>
+        <button id="theme-toggle">🌙 Dark Mode</button>
         <button type="button" id="burger">
           <svg class="icon icon-menu" width="32" height="32">
             <use xlink:href="./img/symbol-defs.svg#icon-menu"></use>
@@ -150,26 +154,26 @@
           </section>
         </section>
       </section>
-      <section class="experience">
+      <section class="experience" id="Exp">
         <section class="container">
           <h2 class="exp-head">deneyim</h2>
           <ul class="exp-list">
             <li class="exp-item">
               <h3 class="exp-name">Frontend Developer</h3>
               <h3 class="exp-company">Freelance</h3>
-              <p class="exp-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda amet voluptates. Fugiat iusto ipsam dolorem doloribus dolores quia unde. Delectus quia non impedit labore omnis velit ab ad sequi!</p>
+              <p class="exp-para">Liseden beri yakın çevremde istiyenler için basit web siteleri yapmaktaydım fakat hem kursta belli bir seviye gelişim hem de kendi ufkumu genişletebilmek için bu alanda daha profesyonel hizmetler vermeye odaklanmış durumdayım</p>
               <span class="exp-date">Haziran 2024 - Günümüz</span>
             </li>
             <li class="exp-item">
               <h3 class="exp-name">Sistem Yöneticisi ve Müşteri Danışmanı</h3>
               <h3 class="exp-company">osoci - hibrit</h3>
-              <p class="exp-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda amet voluptates. Fugiat iusto ipsam dolorem doloribus dolores quia unde. Delectus quia non impedit labore omnis velit ab ad sequi!</p>
+              <p class="exp-para">Canlı yayın sisteminin takibi, sistem içerisinde olan bug ve hataların tespit etmek ve yazılımcı ekibine bunları bildirmek. Çalışma dönemlerimde gördüğüm Frontend hatalarını bildirdikten sonra kendimi geliştirmek için kendim çözüm üretmeye çalıştım. Aynı zamanda bu sistemin canlı desteği bulunuyor kullanıcıların yaşadığı sorunlar karşısında çözümler üreterek memnuyet seviyesini yüksek tutmaya özen gösterdim / gösteriyorum.</p>
               <span class="exp-date">Aralık 2021 - Günümüz</span>
             </li>
           </ul>
         </section>
       </section>
-      <section class="education">
+      <section class="education" id="Edu">
         <section class="container">
           <h2 class="edu-head">eğitim</h2>
           <ul class="edu-list">
@@ -177,8 +181,10 @@
               <h3 class="edu-name">go - it türkiye</h3>
               <h4 class="edu-company">Full Stack Bootcamp (10 Ay)</h3>
               <h4 class="edu-extra">Sertifikalı</h4>
-              <p class="edu-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda amet voluptates. Fugiat iusto ipsam dolorem doloribus dolores quia unde. Delectus quia non impedit labore omnis velit ab ad sequi!</p>
+              <p class="edu-para">GO - IT Türkiyenin düzenlediği sertifikalı Fullstack Eğitim Programı. Kurs 10 Ay sürmekte ve HTML-CSS-JS React.js - Node.js Ajax gibi dil ve frameworkleri öğrenmemizi aynı zamanda sektöre hızlı adapte olabilmemiz için Trello, GitHub, GIT, VITE gibi gerçek projelerde kullanılan uygulamalarla bize takım projeleri yaptırarak sektöre sağlam bir şekilde hazırlanmamızı sağlıyorlar.
+              </p>
               <span class="edu-date">Kasım 2024 - Ağustos 2025</span>
+              <button type="button" class="edu-button">Eğitim Detayları</button>
             </li>
              <li class="edu-item">
               <h3 class="edu-name">Yıldız Teknik Üniversitesi</h3>
@@ -201,7 +207,7 @@
           </ul>
         </section>
       </section>
-      <section class="skill">
+      <section class="skill" id="Skill">
         <section class="container">
           <h2 class="skill-head">yetenekler</h2>
           <section class="skill-section">
@@ -219,25 +225,61 @@
               </ul>
             </section>
             <section class="hard">
-              <h3 class="hard-head">Hard Skiller</h3>
+              <h3 class="hard-head">Hard Skiller ve Teknik Beceriler</h3>
               <ul class="skill-list">
-                <li class="skill-li"><span class="skill-item">Skill1</span></li>
-                <li class="skill-li"><span class="skill-item">Skill2</span></li>
-                <li class="skill-li"><span class="skill-item">Skill3</span></li>
-                <li class="skill-li"><span class="skill-item">Skill4</span></li>
+                <li class="skill-li"><span class="skill-item">
+                  <svg class="icon icon-menu" width="20" height="20">
+                    <use xlink:href="./img/symbol-defs.svg#icon-html5"></use>
+                  </svg>HTML / CSS
+                </span></li>
+                <li class="skill-li"><span class="skill-item"><svg class="icon icon-menu" width="20" height="20">
+                    <use xlink:href="./img/symbol-defs.svg#icon-tailwindcss"></use>
+                  </svg>Tailwind CSS</span></li>
+                <li class="skill-li"><span class="skill-item"></svg><svg class="icon icon-menu" width="20" height="20">
+                    <use xlink:href="./img/symbol-defs.svg#icon-bootstrap"></use>
+                  </svg>Bootstrap -<svg class="icon icon-menu" width="20" height="20">
+                    <use xlink:href="./img/symbol-defs.svg#icon-embed2"></use>
+                  </svg>Flexbox design</span></li>
+                <li class="skill-li"><span class="skill-item"><svg class="icon icon-menu" width="20" height="20">
+                    <use xlink:href="./img/symbol-defs.svg#icon-javascript"></use>
+                  </svg>Javascript</span></li>
+                <li class="skill-li"><span class="skill-item"><svg class="icon icon-menu" width="20" height="20">
+                    <use xlink:href="./img/symbol-defs.svg#icon-github"></use>
+                  </svg>GIT / Github</span></li>
+                <li class="skill-li"><span class="skill-item"><svg class="icon icon-menu" width="20" height="20">
+                    <use xlink:href="./img/symbol-defs.svg#icon-mobile"></use>
+                  </svg>Responsive & Mobil First Design</span></li>
+                <li class="skill-li"><span class="skill-item"><svg class="icon icon-menu" width="20" height="20">
+                    <use xlink:href="./img/symbol-defs.svg#icon-npm"></use>
+                  </svg>NPM - Vite derleyici</span></li>
+                <li class="skill-li"><span class="skill-item"><svg class="icon icon-menu" width="20" height="20">
+                    <use xlink:href="./img/symbol-defs.svg#icon-react"></use>
+                  </svg>React.js</span></li>
+                <li class="skill-li"><span class="skill-item"><svg class="icon icon-menu" width="20" height="20">
+                    <use xlink:href="./img/symbol-defs.svg#icon-node-dot-js"></use>
+                  </svg>Node.js</span></li>
+                <li class="skill-li"><span class="skill-item"><svg class="icon icon-menu" width="20" height="20">
+                    <use xlink:href="./img/symbol-defs.svg#icon-embed2"></use>
+                  </svg>C#</span></li>
+                <li class="skill-li"><span class="skill-item"><svg class="icon icon-menu" width="20" height="20">
+                    <use xlink:href="./img/symbol-defs.svg#icon-file-sql"></use>
+                  </svg>SQL</span></li>
+                <li class="skill-li"><span class="skill-item"><svg class="icon icon-menu" width="20" height="20">
+                    <use xlink:href="./img/symbol-defs.svg#icon-python"></use>
+                  </svg>Python</span></li>
               </ul>
             </section>
           </section>
         </section>
       </section>
-      <section class="project">
+      <section class="project" id="Project">
         <section class="container">
           <h2 class="project-head">Projelerim</h2>
           <section class="project-section">
             <ul class="project-list">
               <li class="project-item">
                 <h3 class="project-name">Focus Frame</h3>
-                <span class="project-date">25.01.2000</span>
+                <span class="project-date">21.03.2025</span>
                 <section class="project-list-item">
                   <section class="project-body">
                     <p class="project-para">
@@ -248,14 +290,13 @@
                     <video src="./video/cdsmall.mp4" class="video" loop autoplay></video>
                   </section>
                   <section class="project-buttons">
-                  <a href="https://github.com/DenizzOzder" target="_blank" class="social-link">
+                  <a href="https://github.com/DenizzOzder/FocusFrame" target="_blank" class="social-link">
                     <svg class="icon icon-menu" width="32" height="32">
                       <use xlink:href="./img/symbol-defs.svg#icon-github"></use>
                     </svg>
                     <span>Repo</span>
-                  </a>
-                  
-                  <a href="https://github.com/DenizzOzder" target="_blank" class="social-link">
+                  </a> 
+                  <a href="https://denizzozder.github.io/FocusFrame/" target="_blank" class="social-link">
                     <svg class="icon icon-menu" width="32" height="32">
                       <use xlink:href="./img/symbol-defs.svg#icon-podcast"></use>
                     </svg>
@@ -267,7 +308,7 @@
                     </svg>
                     <span>Sunumu</span>                    
                   </a>
-                  <a href="">
+                  <a href="https://trello.com/b/mW5aKX8k/focus-frame-%E2%9C%93">
                     <svg class="icon icon-menu" width="32" height="32">
                       <use xlink:href="./img/symbol-defs.svg#icon-trello"></use>
                     </svg>
@@ -276,27 +317,27 @@
                   </section>
                 </section>
               </li>
-                            <li class="project-item">
-                <h3 class="project-name">Focus Frame</h3>
-                <span class="project-date">25.01.2000</span>
+              <li class="project-item">
+                <h3 class="project-name">Harvest - Divaneler Ekibi</h3>
+                <span class="project-date">07.02.2025</span>
                 <section class="project-list-item">
                   <section class="project-body">
                     <p class="project-para">
-                      Odaklan, üret, iz bırak. <br> FocusFrame ile potansiyelini serbest bırak
+                      Divaneler Harvest – Toprağın Fısıltısını Dinle, Hasadın Ritmini Yakala.
                     </p>
                   </section>
                   <section class="project-video">
                     <video src="./video/cdsmall.mp4" class="video" loop autoplay></video>
                   </section>
                   <section class="project-buttons">
-                  <a href="https://github.com/DenizzOzder" target="_blank" class="social-link">
+                  <a href="https://github.com/DenizzOzder/divaneler-harvest" target="_blank" class="social-link">
                     <svg class="icon icon-menu" width="32" height="32">
                       <use xlink:href="./img/symbol-defs.svg#icon-github"></use>
                     </svg>
                     <span>Repo</span>
                   </a>
                   
-                  <a href="https://github.com/DenizzOzder" target="_blank" class="social-link">
+                  <a href="https://denizzozder.github.io/divaneler-harvest/" target="_blank" class="social-link">
                     <svg class="icon icon-menu" width="32" height="32">
                       <use xlink:href="./img/symbol-defs.svg#icon-podcast"></use>
                     </svg>
@@ -308,7 +349,7 @@
                     </svg>
                     <span>Sunumu</span>                    
                   </a>
-                  <a href="">
+                  <a href="https://trello.com/b/DU7Bwoxm/html-css-group-a">
                     <svg class="icon icon-menu" width="32" height="32">
                       <use xlink:href="./img/symbol-defs.svg#icon-trello"></use>
                     </svg>
@@ -317,27 +358,30 @@
                   </section>
                 </section>
               </li>
-                            <li class="project-item">
-                <h3 class="project-name">Focus Frame</h3>
-                <span class="project-date">25.01.2000</span>
+              <li class="project-item">
+                <h3 class="project-name">New Bloodline</h3>
+                <span class="project-date">12.06.2025</span>
                 <section class="project-list-item">
                   <section class="project-body">
                     <p class="project-para">
-                      Odaklan, üret, iz bırak. <br> FocusFrame ile potansiyelini serbest bırak
+                      Soy Yenilendi, Oyun Başladı.
+                      <br>
+                      <br>
+                      (Sadece Desktop Düzeni)
                     </p>
                   </section>
                   <section class="project-video">
                     <video src="./video/cdsmall.mp4" class="video" loop autoplay></video>
                   </section>
                   <section class="project-buttons">
-                  <a href="https://github.com/DenizzOzder" target="_blank" class="social-link">
+                  <a href="https://github.com/DenizzOzder/divaneler-harvest" target="_blank" class="social-link">
                     <svg class="icon icon-menu" width="32" height="32">
                       <use xlink:href="./img/symbol-defs.svg#icon-github"></use>
                     </svg>
                     <span>Repo</span>
                   </a>
                   
-                  <a href="https://github.com/DenizzOzder" target="_blank" class="social-link">
+                  <a href="https://denizzozder.github.io/NewBloodLine/" target="_blank" class="social-link">
                     <svg class="icon icon-menu" width="32" height="32">
                       <use xlink:href="./img/symbol-defs.svg#icon-podcast"></use>
                     </svg>
@@ -349,7 +393,7 @@
                     </svg>
                     <span>Sunumu</span>                    
                   </a>
-                  <a href="">
+                  <a href="https://trello.com/b/Tm61c3DT/newbloodline-%E2%9C%93" target="_blank">
                     <svg class="icon icon-menu" width="32" height="32">
                       <use xlink:href="./img/symbol-defs.svg#icon-trello"></use>
                     </svg>
@@ -358,58 +402,56 @@
                   </section>
                 </section>
               </li>
-                            <li class="project-item">
-                <h3 class="project-name">Focus Frame</h3>
-                <span class="project-date">25.01.2000</span>
-                <section class="project-list-item">
-                  <section class="project-body">
-                    <p class="project-para">
-                      Odaklan, üret, iz bırak. <br> FocusFrame ile potansiyelini serbest bırak
-                    </p>
-                  </section>
-                  <section class="project-video">
-                    <video src="./video/cdsmall.mp4" class="video" loop autoplay></video>
-                  </section>
-                  <section class="project-buttons">
-                  <a href="https://github.com/DenizzOzder" target="_blank" class="social-link">
-                    <svg class="icon icon-menu" width="32" height="32">
-                      <use xlink:href="./img/symbol-defs.svg#icon-github"></use>
-                    </svg>
-                    <span>Repo</span>
-                  </a>
-                  
-                  <a href="https://github.com/DenizzOzder" target="_blank" class="social-link">
-                    <svg class="icon icon-menu" width="32" height="32">
-                      <use xlink:href="./img/symbol-defs.svg#icon-podcast"></use>
-                    </svg>
-                    <span>Canlı</span>
-                  </a>
-                  <a href="">
-                    <svg class="icon icon-menu" width="32" height="32">
-                      <use xlink:href="./img/symbol-defs.svg#icon-play"></use>
-                    </svg>
-                    <span>Sunumu</span>                    
-                  </a>
-                  <a href="">
-                    <svg class="icon icon-menu" width="32" height="32">
-                      <use xlink:href="./img/symbol-defs.svg#icon-trello"></use>
-                    </svg>
-                    <span>Trello</span>                    
-                  </a>
-                  </section>
-                </section>
-              </li>
-              
             </ul>
           </section>
         </section>
       </section>
-      <section class="hobbies">
+      <section class="hobbies" id="Interest">
         <seciton class="container">
           <h2 class="hobby-head">Hobilerim</h2>
+          <p class="hobby-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellendus consequuntur id odit aspernatur! Harum, quod distinctio sit quas mollitia tempora dolorem pariatur? Perferendis delectus fuga laborum illo vel nihil!</p>
         </seciton>
       </section>
-    </main>
+      </main>
+      <footer>
+         <section class="container">
+          <section class="footer-social">
+            <ul class="social-list">
+              <li class="social-li">
+                <a href="https://www.linkedin.com/in/denizozder1/" target="_blank" class="social-link">
+                  <svg class="icon icon-menu" width="24" height="24">
+                    <use xlink:href="./img/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-li">
+                <a href="https://github.com/DenizzOzder" target="_blank" class="social-link">
+                  <svg class="icon icon-menu" width="24" height="24">
+                    <use xlink:href="./img/symbol-defs.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-li">
+                <a href="https://www.instagram.com/deniz.ozder1/" target="_blank" class="social-link">
+                  <svg class="icon icon-menu" width="24" height="24">
+                    <use
+                      xlink:href="./img/symbol-defs.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-li">
+                <a href="https://x.com/DENlSS_" target="_blank" class="social-link">
+                  <svg class="icon icon-menu" width="24" height="24">
+                    <use xlink:href="./img/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <span class="footer-legal">© 2025 Deniz Özder. Tüm hakları saklıdır.</span>
+          </section>
+        </section>
+      </footer>
     <script src="main.js" defer></script>
   </body>
 </html>

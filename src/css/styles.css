@@ -29,6 +29,9 @@ h1{
 h1 .hero-span{
   color: var(--bg-main);
 }
+p{
+  font-family: inherit;
+}
 /* span{
   display: block;
   width: 100%;
@@ -92,6 +95,7 @@ p{
 } */
 a{
   text-decoration: none;
+  font-family: inherit;
 }
 ul{
   list-style: none;
@@ -118,7 +122,7 @@ header{
 }
 .navbar .mobilelogo{
   color: rgba(255, 253, 253, 0.767);
-  font-size: 24px;
+  font-size: 20px;
   font-family:inherit;
   font-weight: 700;
   letter-spacing: -2px;
@@ -218,7 +222,7 @@ header{
   justify-content: center;
 }
 /* HERO END */
-/* EXP START */
+/* EXP - EDU START */
 .experience, .education, .skill, .project, .hobbies{
   display: block;
   position: relative;
@@ -269,7 +273,24 @@ h4{
   color: var(--bg-main);
   opacity: 0.8;
 }
-/* EXP END */
+.edu-button{
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  padding: 6px 10px;
+  border-radius: 12px;
+  border: 1px solid white;
+  background-color: blue;
+  color: white;
+  font-family: inherit;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.edu-button:hover{
+  background-color: var(--accent-orange);
+  font-weight: 600;
+}
+/* EXP - EDU END */
 /* SKILLS START */
 
 .skill .container .skill-head{
@@ -290,6 +311,17 @@ h4{
 .skill .container .skill-section ul{
   list-style:square;
   margin-left: 40px;
+}
+.skill .container .skill-section .hard ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.skill .container .skill-section .hard .skill-item{
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 /* SKILLS END */
 
@@ -341,9 +373,10 @@ h4{
     max-width: 360px;
     flex-basis: 100%;
     width: 100%;
-    background-color: var(--bg-main);
+    background-color: rgb(255 193 168);
     border-top: 1px solid black;
     padding: 5px;
+    border-radius: 8px;
   }
   .project-buttons a{
     display: flex;
@@ -378,3 +411,23 @@ h4{
     font-weight: 800;
   }
 /* Hobbies END */
+
+/* FOOTER START */
+footer{
+  margin-top: 20px;
+}
+  footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .container .footer-social .social-list{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+  }
+  footer .container .footer-social .footer-legal{
+    font-size: 12px;
+    text-align: center;
+  }
+/* FOOTER END */
