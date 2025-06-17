@@ -1,6 +1,7 @@
 html,
 body{
   overflow-x: hidden;
+  position: relative;
   scroll-behavior: smooth;
   font-family: 'Mulish',sans-serif;
 }
@@ -177,13 +178,49 @@ header{
   color: rgba(255, 255, 255, 1);
   font-weight: 800;
 }
+#theme-toggle {
+  position: absolute;
+  right: 80px;
+  height: 30px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-left: 32px;
+  border-radius: 30px;
+  background: linear-gradient(to right, rgb(248, 119, 25), rgb(255, 202, 15));
+  padding: 0px 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.toggle-thumb {
+  position: absolute;
+  left: 28px; /* Başlangıçta sağda */
+  width: 18px;
+  height: 18px;
+  z-index: 3;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* Tema değişince sola gider */
+body.dark-theme .toggle-thumb {
+  left: 4px;
+}
+
+.dark-theme {
+  background-color: #0f172a;
+}
 /*  HERO START  */
 
 .hero{
   display: block;
   position: relative;
   overflow: hidden;
-  margin-top: 60px;
+  margin-top: 70px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.205);
 
 }
@@ -289,6 +326,14 @@ h4{
 .edu-button:hover{
   background-color: var(--accent-orange);
   font-weight: 600;
+}
+.modal-goit{
+  position: absolute;
+  width: 90vw;
+  height: 90vh;
+  background-color: rgb(228, 110, 0);
+  z-index: 1000;
+  margin: 150px;
 }
 /* EXP - EDU END */
 /* SKILLS START */
@@ -409,6 +454,13 @@ h4{
     text-transform: uppercase;
     font-size: 26px;
     font-weight: 800;
+  }
+  .hobbies .container .hobi-list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style:circle;
+    margin-left: 40px;
   }
 /* Hobbies END */
 
