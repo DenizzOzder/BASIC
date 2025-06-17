@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="48" fill="#0f172a"></circle>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-size="42" font-family="Arial, sans-serif" fill="#00f0ff" font-weight="bold">
+    CV
+  </text>
+</svg>

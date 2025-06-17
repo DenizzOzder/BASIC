@@ -5,6 +5,7 @@ body {
   scroll-behavior: smooth;
   font-family: 'Mulish', sans-serif;
   background-color: rgb(255, 250, 250);
+  transition: all 0.3s ease-in-out;
 }
 :root {
   --bg-main: rgb(241, 96, 38);
