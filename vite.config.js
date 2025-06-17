@@ -10,8 +10,6 @@ export default defineConfig(({ command }) => {
       [command === 'serve' ? 'global' : '_global']: {},
     },
 
-    base: './', // ✅ BASE AYARINI BURAYA EKLEDİK
-
     root: 'src',
     build: {
       sourcemap: true,
