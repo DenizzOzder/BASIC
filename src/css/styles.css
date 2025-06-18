@@ -42,7 +42,7 @@ header {
   display: flex;
   position: fixed;
   overflow: hidden;
-  background-color: rgb(241, 96, 38);
+  background: linear-gradient(to bottom, #d34800, #e9a940);;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -269,20 +269,70 @@ h4 {
   font-family: inherit;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  font-weight: 600;
 }
 .edu-button:hover,
 .cv-button:hover {
-  background-color: var(--accent-orange);
+  background-color: var(--bg-main);
   font-weight: 600;
 }
-.modal-goit {
-  position: absolute;
+.edu-details{
+  display: block;
+  position: relative;
+  overflow: hidden;
   width: 90vw;
-  height: 90vh;
-  background-color: rgb(228, 110, 0);
-  z-index: 1000;
-  margin: 150px;
+  margin: auto;
+  transition: max-height 0.5s ease-in-out;
+  max-height: 0;
+  overflow: hidden ;
 }
+.edu-details.shown{
+  max-height: 500px;
+}
+.edu-details .container .detail-list{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: all 0.3s ease-in-out;
+  
+}
+.edu-details .container .detail-list .detail-item{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #d34800, #e9a940);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  margin: 0 auto
+}
+.edu-details .container .detail-list .detail-item .item-list{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  transition: max-height 0.3s ease-in-out;
+  opacity: 0;
+  max-height: 0;
+}
+.edu-details .container .detail-list .detail-item .icon{
+ transition: all 0.3s ease-in-out;
+}
+.edu-details .container .detail-list .detail-item .item-list.visible{
+  padding-inline-start: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: all 0.3s ease-in-out;
+  max-height: 200px;
+  opacity: 1;
+  text-transform: capitalize;
+}
+.edu-details .container .detail-list .detail-item .icon.rotated{
+  transform: rotate(180deg);
+  fill: white;
+}
+
 /* EXP - EDU END */
 /* SKILLS START */
 
@@ -664,8 +714,11 @@ footer .container .footer-social .footer-legal {
     font-size: 16px;
   }
   /* EDU PC START */
-  .edu-button {
+  .edu-button, .cv-button {
     font-size: 22px;
+  }
+  .edu-details .container .detail-list .detail-item{
+    width: 70%;
   }
   /* EDU PC END */
 
@@ -731,6 +784,9 @@ footer .container .footer-social .footer-legal {
   color: #E0E0E0;
   text-shadow: 0 0 10px rgb(187, 188, 255);
 }
+.education .container .edu-list .edu-item{
+  transition: all 0.3s ease-in-out;
+}
 .experience .container .exp-list .exp-item .exp-company, .education .container .edu-list .edu-item .edu-company{
   color: #888888;
 }
@@ -771,7 +827,7 @@ footer .container .footer-social .footer-legal {
   color: #E0E0E0;
   text-shadow: 0 0 10px rgb(187, 188, 255);;
 }
-.skill .container .skill-section .soft .soft-head, .skill .container .skill-section .hard .hard-head
+.dark-theme .skill .container .skill-section .soft .soft-head, .dark-theme .skill .container .skill-section .hard .hard-head
 {
   color: #e0e0e0d5;
   text-shadow: 0 0 10px rgb(187, 188, 255);
