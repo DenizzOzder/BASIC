@@ -625,16 +625,16 @@ footer .container .footer-social .footer-legal {
     justify-content: center;
   }
   #theme-toggle {
-    width: 80px;
-    height: 50px;
+    width: 60px;
+    height: 30px;
   }
   #theme-toggle img {
-    width: 22px;
+    width: 18px;
   }
   .toggle-thumb {
-    width: 32px;
-    height: 32px;
-    left: 40px;
+    width: 24px;
+    height: 24px;
+    left: 32px;
   }
   .navbar .mobilelogo {
     display: none;
@@ -659,7 +659,7 @@ footer .container .footer-social .footer-legal {
     gap: 20px;
   }
   .navbar-items .nav-list .list-item .nav-link {
-    font-size: 21px;
+    font-size: 18px;
   }
   body {
     padding-left: 272px;
@@ -685,38 +685,32 @@ footer .container .footer-social .footer-legal {
     font-size: 18px;
   }
   .hero .container .hero-body .body-para {
-    font-size: 24px;
+    font-size: 1.15rem;
     letter-spacing: 0.02rem;
     line-height: 32px;
   }
-  .hero .container .social-media .social-list svg {
-    width: 56px;
-    height: 56px;
-  }
+
   /* HERO PC END */
   /* EXP PC START */
   .experience .container .exp-head,
   .education .container .edu-head {
-    font-size: 38px;
+    font-size: 30px;
   }
   h3 {
-    font-size: 26px;
+    font-size: 21px;
   }
   h4 {
-    font-size: 22px;
+    font-size: 19px;
   }
   p {
-    font-size: 20px;
+    font-size: 18px;
   }
   /* EXP PC END */
   .experience .container .exp-list .exp-item .exp-date,
   .education .container .edu-list .edu-item .edu-date {
-    font-size: 16px;
+    font-size: 14px;
   }
   /* EDU PC START */
-  .edu-button, .cv-button {
-    font-size: 22px;
-  }
   .edu-details .container .detail-list .detail-item{
     width: 70%;
   }
@@ -724,15 +718,15 @@ footer .container .footer-social .footer-legal {
 
   /* SKILL PC START */
   .skill .container .skill-head {
-    font-size: 32px;
+    font-size: 30px;
   }
   .skill .container .skill-section .soft .soft-head,
   .skill .container .skill-section .hard .hard-head {
-    font-size: 22px;
+    font-size: 21px;
   }
   .skill .container .skill-section .soft .skill-list .skill-li .skill-item,
   .skill .container .skill-section .hard .skill-list .skill-li .skill-item {
-    font-size: 22px;
+    font-size: 18px;
   }
   .skill .container .skill-section .hard .skill-list,
   .skill .container .skill-section .soft .skill-list {
@@ -743,6 +737,10 @@ footer .container .footer-social .footer-legal {
   .skill .container .skill-section .hard .skill-list svg {
     width: 24px;
     height: 24px;
+  }
+  .skill .container .skill-section{
+    flex-direction: row;
+    gap: 25%;
   }
   /* SKILL PC END */
   /* Project PC START */
@@ -755,7 +753,7 @@ footer .container .footer-social .footer-legal {
   /* HOBBY PC START*/
   .hobbies .container .hobi-list {
     gap: 15px;
-    font-size: 22px;
+    font-size: 18px;
   }
   /* HOBBY PC END */
   /* FOOTER PC START */
@@ -840,4 +838,12 @@ footer .container .footer-social .footer-legal {
 }
 .dark-theme button:hover{
   background-color: #F5E8D8;
+}
+.icon{
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+}
+.icon:hover{
+  fill: blue;
+  transform: translateY(-4px)
 }
